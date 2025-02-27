@@ -1448,9 +1448,10 @@ impl LoginConfigHandler {
         self.session_id = sid;
         self.supported_encoding = Default::default();
         self.restarting_remote_device = false;
-        self.force_relay =
-            config::option2bool("force-always-relay", &self.get_option("force-always-relay"))
-                || force_relay;
+        self.force_relay = true;
+        // self.force_relay =
+        //     config::option2bool("force-always-relay", &self.get_option("force-always-relay"))
+        //         || force_relay;
         if let Some((real_id, server, key)) = &self.other_server {
             let other_server_key = self.get_option("other-server-key");
             if !other_server_key.is_empty() && key.is_empty() {
