@@ -1,4 +1,4 @@
-Name:       rustdesk
+Name:       sunshinedesk
 Version:    1.3.8
 Release:    0
 Summary:    RPM package
