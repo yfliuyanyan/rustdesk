@@ -322,7 +322,7 @@ class MyIdMenu: Reactor.Component {
                 <Enhancements />
                 <li #allow-remote-config-modification><span>{svg_checkmark}</span>{translate('Enable remote configuration modification')}</li>
                 <div .separator />
-                <li #custom-server>{translate('ID/Relay Server')}</li>
+                <!-- <li #custom-server>{translate('ID/Relay Server')}</li> -->
                 <li #whitelist title={translate('whitelist_tip')}>{translate('IP Whitelisting')}</li>
                 <li #socks5-server>{translate('Socks5 Proxy')}</li>
                 <div .separator />
